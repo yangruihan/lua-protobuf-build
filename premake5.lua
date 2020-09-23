@@ -243,7 +243,7 @@ project "pb"
 
     links
     {
-        "lualib"
+        "luaDLL"
     }
 
     defines
