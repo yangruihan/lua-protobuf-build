@@ -41,6 +41,7 @@ project "luaDLL"
     defines
     {
         "_CRT_SECURE_NO_WARNINGS",
+        "LUA_USE_DLOPEN",
     }
 
     includedirs
@@ -265,6 +266,8 @@ project "pb"
 
     filter "system:macosx"
         location "build/macos"
+
+        sysincludedirs { "./lualib" }
 
     filter "configurations:Debug"
         runtime "Debug"
